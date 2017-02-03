@@ -1,0 +1,90 @@
+body {
+  background: -webkit-linear-gradient(top left, #03a0e7, #03A9F4);
+  background: linear-gradient(to bottom right, #03a0e7, #03A9F4);
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2em;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.svg-box {
+  height: 100vh;
+  margin: 0;
+  padding: 10vh 0 0 10vh;
+  visibility: hidden;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  fill: rgba(255, 255, 255, 0.95);
+}
+
+main {
+  width: 100vw;
+  background: #FFF;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  z-index: 5;
+}
+main .display {
+  text-align: center;
+}
+main .display h2 {
+  color: #03A9F4;
+  padding: 5vh 0;
+}
+main .display p {
+  color: #03A9F4;
+  padding-bottom: 5vh;
+}
+
+.keypad {
+  background: -webkit-linear-gradient(top left, #03A9F4, #08b0fc, #03A9F4);
+  background: linear-gradient(to bottom right, #03A9F4, #08b0fc, #03A9F4);
+  color: #FFF;
+  padding: 0 15px;
+  border: 0.5px solid #FFF;
+}
+.keypad p {
+  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2.5vh;
+  border: 0.5px solid #FFF;
+  cursor: pointer;
+}
+.keypad p:hover {
+  background-color: #FFF;
+  color: #03A9F4;
+  border: 0.5px solid #03A9F4;
+}
+.keypad .equal-to {
+  height: 999px;
+  padding-top: 7.5vh;
+}
+.keypad .operators {
+  border-bottom: 0.5px solid #FFF;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 380px) {
+  main {
+    width: 380px;
+  }
+
+  .svg-box {
+    visibility: visible;
+  }
+}

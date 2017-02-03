@@ -1,0 +1,67 @@
+<head>
+    <title>JS Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="svg-box">
+  <svg height="100" width="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <!--<defs>
+      <linearGradient id="myGradient">
+        <stop offset="5%" stop-color="#FFF" />
+        <stop offset="95%" stop-color="#E1F5FE" />
+      </linearGradient>
+    </defs>-->
+  <polygon points="100,0 100,100 0,100"/>
+  </svg>
+</div>
+
+<main>
+  <div class="display">
+    <h2><strong id="valOutput">0</strong></h2>
+    <p>( <span id="valString"></span> )</p>
+  </div>
+  <div class="keypad">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-9 numbers">
+          <div class="container-fluid">
+            <div class="row">
+              <p class="col-xs-4 text-center" id="KC">C</p>
+              <p class="col-xs-4 text-center" id="KAC">AC</p>
+              <p class="col-xs-4 text-center" id="KDiv">/</p>
+              <p class="col-xs-4 text-center" id="K7">7</p>
+              <p class="col-xs-4 text-center" id="K8">8</p>
+              <p class="col-xs-4 text-center" id="K9">9</p>
+              <p class="col-xs-4 text-center" id="K4">4</p>
+              <p class="col-xs-4 text-center" id="K5">5</p>
+              <p class="col-xs-4 text-center" id="K6">6</p>
+              <p class="col-xs-4 text-center" id="K1">1</p>
+              <p class="col-xs-4 text-center" id="K2">2</p>
+              <p class="col-xs-4 text-center" id="K3">3</p>
+              <p class="col-xs-8 text-center" id="K0">0</p>
+              <p class="col-xs-4 text-center" id="KDot">.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 operators">
+          <div class="container-fluid">
+            <div class="row">
+              <p class="col-xs-12 text-center" id="KMul">*</p>
+              <p class="col-xs-12 text-center" id="KAdd">+</p>
+              <p class="col-xs-12 text-center" id="KSub">-</p>
+              <p class="col-xs-12 equal-to text-center" id="KEqu">=</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
